@@ -1,0 +1,7 @@
+<h1>Create a short URL</h1>
+<%= flash[:error] %>
+<%= form_with model: @url do |form| %>
+  <p>Name of the url: <%= form.text_field :name %></p>
+  <p>Url to shorten: <%= form.text_field :long_url %></p>
+  <%= form.submit %>
+<% end %>
